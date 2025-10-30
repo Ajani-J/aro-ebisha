@@ -1531,13 +1531,26 @@ small {
   border-radius: 555px 555px 555px 555px;
 }
 
-@media (max-width: 767px) {
+@media (min-width:551px) and (max-width: 767px) {
   .person-image {
     max-width: 371px;
-    margin-left: 59px;
+    margin-left: 78px;
   }
 }
-
+@media (min-width:350px) and (max-width:551px){
+  .person-image{
+    max-width:371px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+@media(max-width:350px){
+  .person-image{
+    max-width:300px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
 .slider-shape-1 {
   position: absolute;
   top: 0%;
@@ -2052,7 +2065,7 @@ small {
 .experience-item {
   border-radius: 15px;
   padding: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .about-tab-section .about-tab .experience-item .expe-year-section i {
@@ -2237,7 +2250,7 @@ small {
 
 .services-section .service-box {
   padding: 60px 40px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .services-section .icon-img img {
@@ -2705,8 +2718,19 @@ small {
   }
 }
 
-@media(max-width:992px){
+@media (min-width: 349px) and  (max-width:992px){
   .typed-heading{
     font-size: 45px !important;
+  }
+}
+
+@media (max-width: 348px) {
+  .typed-heading {
+    font-size: 41px !important;
+  }
+}
+@media  (max-width: 366px) {
+  .typed-heading {
+    font-size: 35px !important;
   }
 }
